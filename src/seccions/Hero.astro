@@ -1,3 +1,72 @@
-<main>
-    <h1>Welcome to My Site</h1>
+<main id="inicio" class="pt-24 min-h-screen flex items-center relative overflow-hidden">
+  <!-- Background gradient effect -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#d4af37]/5 via-transparent to-transparent pointer-events-none"></div>
+  <div class="absolute top-20 right-10 w-96 h-96 bg-[#d4af37]/5 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-10 w-80 h-80 bg-[#d4af37]/3 rounded-full blur-3xl"></div>
+
+  <div class="max-w-6xl mx-auto px-6 relative z-10 w-full">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Left side - Text -->
+      <div class="space-y-6">
+        <h1 class="text-5xl md:text-6xl font-bold text-white leading-tight">
+          Domina la
+          <span class="text-[#d4af37]"> Guitarra</span>
+        </h1>
+
+        <p class="text-lg text-[#a0a0a0] leading-relaxed max-w-md">
+          Aprende de profesionales certificados con más de 20 años de experiencia. Clases personalizadas para todos los niveles, desde principiante hasta avanzado.
+        </p>
+
+        <div class="flex flex-wrap gap-4 pt-4">
+          <button class="bg-[#d4af37] text-[#0f0f0f] px-8 py-3 rounded-lg font-semibold hover:bg-[#aa8c2c] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+            Comenzar Ahora
+          </button>
+          <button class="border-2 border-[#d4af37] text-[#d4af37] px-8 py-3 rounded-lg font-semibold hover:bg-[#d4af37]/10 transition-all">
+            Ver Clases
+          </button>
+        </div>
+
+        <!-- Stats -->
+        <div class="flex gap-8 pt-8 border-t border-[#d4af37]/20">
+          <div>
+            <p class="text-3xl font-bold text-[#d4af37]">500+</p>
+            <p class="text-[#a0a0a0] text-sm">Estudiantes Satisfechos</p>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-[#d4af37]">95%</p>
+            <p class="text-[#a0a0a0] text-sm">Tasa de Éxito</p>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-[#d4af37]">24/7</p>
+            <p class="text-[#a0a0a0] text-sm">Soporte Disponible</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side - Image/Illustration -->
+      <div class="hidden md:flex items-center justify-center">
+        <div class="relative w-full aspect-square max-w-md">
+          <div class="absolute inset-0 bg-gradient-to-br from-[#d4af37] to-[#aa8c2c] rounded-3xl transform rotate-6"></div>
+          <div class="relative bg-[#1a1a1a] rounded-3xl p-8 flex items-center justify-center">
+            <div class="text-8xl animate-pulse">🎸</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
+
+<style>
+  main {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
