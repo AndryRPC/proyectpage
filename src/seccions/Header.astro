@@ -1,33 +1,114 @@
-<header class="fixed top-0 left-0 right-0 z-50 bg-[#0f0f0f]/95 backdrop-blur-sm border-b border-[#d4af37]/10">
-  <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+<script>
+  // Mobile menu toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+      });
+    }
+  });
+</script>
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#0f0f0f] to-[#0f0f0f]/80 backdrop-blur-lg border-b border-[#d4af37]/20">
+  <nav class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
     <!-- Logo -->
-    <a href="#inicio" class="flex items-center hover:opacity-80 transition-opacity">
-      <img src="/logo.svg" alt="Guitar Academy" class="h-12 w-auto">
+    <a href="#inicio" class="group flex items-center gap-2 hover:opacity-90 transition-opacity duration-300">
+      <img src="/logo.svg" alt="Guitar Academy" class="h-14 w-auto filter drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300">
     </a>
 
-    <!-- Navigation Links -->
-    <div class="hidden md:flex items-center gap-8">
-      <a href="#inicio" class="text-[#a0a0a0] hover:text-[#d4af37] transition-colors">Inicio</a>
-      <a href="#servicios" class="text-[#a0a0a0] hover:text-[#d4af37] transition-colors">Servicios</a>
-      <a href="#clases" class="text-[#a0a0a0] hover:text-[#d4af37] transition-colors">Clases</a>
-      <a href="#por-que-nosotros" class="text-[#a0a0a0] hover:text-[#d4af37] transition-colors">¿Por qué nosotros?</a>
-      <a href="#testimonios" class="text-[#a0a0a0] hover:text-[#d4af37] transition-colors">Testimonios</a>
+    <!-- Navigation Links - Desktop -->
+    <nav class="hidden lg:flex items-center gap-1">
+      <a href="#inicio" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+        <span class="relative z-10 group-hover:text-[#d4af37]">Inicio</span>
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+      </a>
+      <a href="#servicios" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+        <span class="relative z-10 group-hover:text-[#d4af37]">Servicios</span>
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+      </a>
+      <a href="#clases" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+        <span class="relative z-10 group-hover:text-[#d4af37]">Clases</span>
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+      </a>
+      <a href="#por-que-nosotros" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+        <span class="relative z-10 group-hover:text-[#d4af37]">¿Por qué nosotros?</span>
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+      </a>
+      <a href="#testimonios" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+        <span class="relative z-10 group-hover:text-[#d4af37]">Testimonios</span>
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+      </a>
+    </nav>
+
+    <!-- CTA Button and Mobile Toggle - Right Side -->
+    <div class="flex items-center gap-4">
+      <!-- CTA Button -->
+      <button class="hidden lg:block relative px-8 py-2.5 text-sm font-semibold text-[#0f0f0f] bg-gradient-to-r from-[#d4af37] to-[#e6c950] rounded-lg hover:shadow-lg hover:shadow-[#d4af37]/30 transition-all duration-300 transform hover:scale-105 active:scale-95 overflow-hidden group">
+        <span class="absolute inset-0 bg-gradient-to-r from-[#aa8c2c] to-[#d4af37] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+        <span class="relative">Reservar Ahora</span>
+      </button>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-[#d4af37]/10 transition-colors duration-300 group">
+        <span class="w-6 h-0.5 bg-[#d4af37] transition-all duration-300 group-hover:w-7"></span>
+        <span class="w-6 h-0.5 bg-[#d4af37] transition-all duration-300"></span>
+        <span class="w-6 h-0.5 bg-[#d4af37] transition-all duration-300 group-hover:w-7"></span>
+      </button>
     </div>
-
-    <!-- CTA Button -->
-    <button class="hidden md:block bg-[#d4af37] text-[#0f0f0f] px-6 py-2 rounded-lg font-semibold hover:bg-[#aa8c2c] transition-all transform hover:scale-105">
-      Reservar Ahora
-    </button>
-
-    <!-- Mobile Menu Toggle -->
-    <button class="md:hidden text-[#d4af37] text-2xl">
-      ☰
-    </button>
   </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden flex-col bg-[#0a0a0a] border-t border-[#d4af37]/20">
+    <nav class="flex flex-col">
+      <a href="#inicio" class="px-6 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
+        Inicio
+      </a>
+      <a href="#servicios" class="px-6 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
+        Servicios
+      </a>
+      <a href="#clases" class="px-6 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
+        Clases
+      </a>
+      <a href="#por-que-nosotros" class="px-6 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
+        ¿Por qué nosotros?
+      </a>
+      <a href="#testimonios" class="px-6 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
+        Testimonios
+      </a>
+      <button class="mx-6 my-4 px-6 py-2.5 text-sm font-semibold text-[#0f0f0f] bg-gradient-to-r from-[#d4af37] to-[#e6c950] rounded-lg hover:shadow-lg hover:shadow-[#d4af37]/30 transition-all duration-300 w-full">
+        Reservar Ahora
+      </button>
+    </nav>
+  </div>
 </header>
 
 <style>
   header {
-    box-shadow: 0 2px 20px rgba(212, 175, 55, 0.05);
+    box-shadow: 0 4px 30px rgba(212, 175, 55, 0.08);
+    animation: slideDown 0.6s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  a {
+    position: relative;
+  }
+
+  /* Smooth transitions for all elements */
+  :global(body) {
+    scroll-behavior: smooth;
   }
 </style>
