@@ -1,18 +1,3 @@
-<script>
-  // Mobile menu toggle
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (menuToggle && mobileMenu) {
-      menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        mobileMenu.classList.toggle('flex');
-      });
-    }
-  });
-</script>
-
 <header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#0f0f0f] to-[#0f0f0f]/80 backdrop-blur-lg border-b border-[#d4af37]/20">
   <nav class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
     <!-- Logo -->
@@ -21,24 +6,24 @@
     </a>
 
     <!-- Navigation Links - Desktop -->
-    <nav class="hidden lg:flex items-center gap-1">
-      <a href="#inicio" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+    <nav class="hidden lg:flex items-center gap-4">
+      <a href="#inicio" class="relative px-4 py-2 mx-1 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
         <span class="relative z-10 group-hover:text-[#d4af37]">Inicio</span>
         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
       </a>
-      <a href="#servicios" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+      <a href="#servicios" class="relative px-4 py-2 mx-1 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
         <span class="relative z-10 group-hover:text-[#d4af37]">Servicios</span>
         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
       </a>
-      <a href="#clases" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+      <a href="#clases" class="relative px-4 py-2 mx-1 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
         <span class="relative z-10 group-hover:text-[#d4af37]">Clases</span>
         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
       </a>
-      <a href="#por-que-nosotros" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+      <a href="#por-que-nosotros" class="relative px-4 py-2 mx-1 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
         <span class="relative z-10 group-hover:text-[#d4af37]">¿Por qué nosotros?</span>
         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
       </a>
-      <a href="#testimonios" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+      <a href="#testimonios" class="relative px-4 py-2 mx-1 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
         <span class="relative z-10 group-hover:text-[#d4af37]">Testimonios</span>
         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
       </a>
@@ -63,20 +48,20 @@
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden lg:hidden flex-col bg-[#0a0a0a] border-t border-[#d4af37]/20">
-    <nav class="flex flex-col">
-      <a href="#inicio" class="px-6 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
+    <nav class="flex flex-col gap-2">
+      <a href="#inicio" class="px-6 py-3 mb-1 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
         Inicio
       </a>
-      <a href="#servicios" class="px-6 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
+      <a href="#servicios" class="px-6 py-3 mb-1 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
         Servicios
       </a>
-      <a href="#clases" class="px-6 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
+      <a href="#clases" class="px-6 py-3 mb-1 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
         Clases
       </a>
-      <a href="#por-que-nosotros" class="px-6 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
+      <a href="#por-que-nosotros" class="px-6 py-3 mb-1 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
         ¿Por qué nosotros?
       </a>
-      <a href="#testimonios" class="px-6 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
+      <a href="#testimonios" class="px-6 py-3 mb-1 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
         Testimonios
       </a>
       <button class="mx-6 my-4 px-6 py-2.5 text-sm font-semibold text-[#0f0f0f] bg-gradient-to-r from-[#d4af37] to-[#e6c950] rounded-lg hover:shadow-lg hover:shadow-[#d4af37]/30 transition-all duration-300 w-full">
@@ -112,3 +97,33 @@
     scroll-behavior: smooth;
   }
 </style>
+
+<script is:inline>
+  // Mobile menu toggle functionality
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileMenu);
+  } else {
+    initMobileMenu();
+  }
+
+  function initMobileMenu() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+      });
+
+      // Close menu when a link is clicked
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('flex');
+        });
+      });
+    }
+  }
+</script>
