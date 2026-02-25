@@ -1,0 +1,6 @@
+{
+    "github.copilot.chat.agent.autoFix": true,
+    "github.copilot.chat.anthropic.contextEditing.enabled": false,
+    "github.copilot.chat.anthropic.tools.websearch.enabled": true,
+    "github.copilot.chat.copilotMemory.enabled": true
+}
