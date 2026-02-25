@@ -22,17 +22,18 @@ body {
 button, input, textarea, select {
 	font-family: inherit;
 	cursor: pointer;
-	transition: box-shadow 0.3s, filter 0.3s;
+	transition: box-shadow 0.2s, transform 0.2s;
 }
 
-/* Solo aplicar animaciones suaves sin mover los botones */
 button:hover, a:hover {
-	filter: brightness(1.08);
-	box-shadow: 0 4px 16px rgba(212, 175, 55, 0.15);
+	filter: brightness(1.1);
+	transform: translateY(-2px) scale(1.03);
+	box-shadow: 0 4px 16px rgba(212, 175, 55, 0.12);
 }
 
 button:active, a:active {
-	filter: brightness(0.95);
+	filter: brightness(0.98);
+	transform: scale(0.97);
 }
 
 a:focus, button:focus {
