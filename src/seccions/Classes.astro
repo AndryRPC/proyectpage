@@ -1,134 +1,83 @@
 <section id="clases" class="max-w-6xl mx-auto px-6">
   <div class="text-center mb-16">
-    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
-      Nuestras Clases
-    </h2>
-    <p class="text-lg text-[#a0a0a0] max-w-2xl mx-auto">
-      Elige el plan perfecto que se ajuste a tus necesidades y presupuesto.
-    </p>
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight animate-fadeIn">Nuestros Planes</h2>
+    <p class="text-lg text-[#a0a0a0] max-w-2xl mx-auto animate-fadeIn">Elige el plan perfecto que se ajuste a tus necesidades y presupuesto.</p>
   </div>
 
   <!-- Pricing Cards -->
-  <div class="grid md:grid-cols-3 gap-8 mb-12">
+  <div class="grid md:grid-cols-3 gap-10 mb-12">
     <!-- Basic Plan -->
-    <div class="bg-[#1a1a1a] border border-[#d4af37]/20 rounded-xl overflow-hidden hover:border-[#d4af37]/50 transition-all">
-      <div class="p-8">
-        <h3 class="text-2xl font-bold text-white mb-2">Básico</h3>
-        <p class="text-[#a0a0a0] mb-6">Para principiantes</p>
-
-        <div class="mb-6">
-          <span class="text-4xl font-bold text-[#d4af37]">$29</span>
-          <span class="text-[#a0a0a0]">/mes</span>
-        </div>
-
-        <button class="w-full bg-[#d4af37] text-[#0f0f0f] py-3 rounded-lg font-semibold hover:bg-[#aa8c2c] transition-all mb-8">
-          Elegir Plan
-        </button>
-
-        <ul class="space-y-3 text-[#a0a0a0] text-sm">
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> 1 clase grupal/semana
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> Acceso a recursos básicos
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> Comunidad online
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-[#a0a0a0]">✗</span> Clases privadas
-          </li>
-        </ul>
+    <div class="group bg-[#181818] border border-[#d4af37]/20 rounded-2xl overflow-hidden shadow-lg hover:border-[#d4af37]/60 hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center animate-fadeIn">
+      <img src="/plan-basic.svg" alt="Plan Básico" class="w-16 h-16 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300" />
+      <h3 class="text-2xl font-bold text-white mb-2">Básico</h3>
+      <p class="text-[#a0a0a0] mb-4">Para principiantes</p>
+      <div class="mb-6">
+        <span class="text-4xl font-bold text-[#d4af37]">$29</span>
+        <span class="text-[#a0a0a0]">/mes</span>
       </div>
+      <button class="w-full bg-gradient-to-r from-[#d4af37] to-[#e6c950] text-[#0f0f0f] py-3 rounded-xl font-bold hover:shadow-lg hover:shadow-[#d4af37]/30 transition-all mb-8">Elegir Plan</button>
+      <ul class="space-y-3 text-[#a0a0a0] text-sm">
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> 1 clase grupal/semana</li>
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Acceso a recursos básicos</li>
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Comunidad online</li>
+        <li class="flex items-center gap-2"><span class="text-[#a0a0a0] font-bold">✗</span> Clases privadas</li>
+      </ul>
     </div>
-
     <!-- Professional Plan -->
-    <div class="bg-[#1a1a1a] border-2 border-[#d4af37] rounded-xl overflow-hidden relative transform scale-105">
-      <div class="absolute top-0 left-0 right-0 bg-[#d4af37] text-[#0f0f0f] py-2 text-center font-semibold text-sm">
-        MÁS POPULAR
+    <div class="group bg-gradient-to-br from-[#d4af37]/10 to-[#181818] border-2 border-[#d4af37] rounded-2xl overflow-hidden relative shadow-xl scale-105 flex flex-col items-center text-center animate-fadeIn">
+      <div class="absolute top-0 left-0 right-0 bg-[#d4af37] text-[#0f0f0f] py-2 text-center font-semibold text-sm z-10">MÁS POPULAR</div>
+      <img src="/plan-pro.svg" alt="Plan Profesional" class="w-16 h-16 mb-4 mt-10 drop-shadow-xl group-hover:scale-110 transition-transform duration-300 z-20" />
+      <h3 class="text-2xl font-bold text-white mb-2">Profesional</h3>
+      <p class="text-[#a0a0a0] mb-4">Para estudiantes serios</p>
+      <div class="mb-6">
+        <span class="text-4xl font-bold text-[#d4af37]">$79</span>
+        <span class="text-[#a0a0a0]">/mes</span>
       </div>
-
-      <div class="p-8 pt-16">
-        <h3 class="text-2xl font-bold text-white mb-2">Profesional</h3>
-        <p class="text-[#a0a0a0] mb-6">Para estudiantes serios</p>
-
-        <div class="mb-6">
-          <span class="text-4xl font-bold text-[#d4af37]">$79</span>
-          <span class="text-[#a0a0a0]">/mes</span>
-        </div>
-
-        <button class="w-full bg-[#d4af37] text-[#0f0f0f] py-3 rounded-lg font-semibold hover:bg-[#aa8c2c] transition-all mb-8">
-          Elegir Plan
-        </button>
-
-        <ul class="space-y-3 text-[#a0a0a0] text-sm">
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> 2 clases privadas/mes
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> Clases grupales ilimitadas
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> Acceso a todos los recursos
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> Seguimiento personalizado
-          </li>
-        </ul>
-      </div>
+      <button class="w-full bg-gradient-to-r from-[#d4af37] to-[#e6c950] text-[#0f0f0f] py-3 rounded-xl font-bold hover:shadow-lg hover:shadow-[#d4af37]/30 transition-all mb-8">Elegir Plan</button>
+      <ul class="space-y-3 text-[#a0a0a0] text-sm">
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> 2 clases privadas/mes</li>
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Clases grupales ilimitadas</li>
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Acceso a todos los recursos</li>
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Seguimiento personalizado</li>
+      </ul>
     </div>
-
     <!-- Elite Plan -->
-    <div class="bg-[#1a1a1a] border border-[#d4af37]/20 rounded-xl overflow-hidden hover:border-[#d4af37]/50 transition-all">
-      <div class="p-8">
-        <h3 class="text-2xl font-bold text-white mb-2">Elite</h3>
-        <p class="text-[#a0a0a0] mb-6">Para profesionales</p>
-
-        <div class="mb-6">
-          <span class="text-4xl font-bold text-[#d4af37]">$199</span>
-          <span class="text-[#a0a0a0]">/mes</span>
-        </div>
-
-        <button class="w-full bg-[#d4af37] text-[#0f0f0f] py-3 rounded-lg font-semibold hover:bg-[#aa8c2c] transition-all mb-8">
-          Elegir Plan
-        </button>
-
-        <ul class="space-y-3 text-[#a0a0a0] text-sm">
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> Clases privadas ilimitadas
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> Mentoría uno-a-uno
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> Acceso a talleres exclusivos
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-[#d4af37]">✓</span> Grabaciones de sesiones
-          </li>
-        </ul>
+    <div class="group bg-[#181818] border border-[#d4af37]/20 rounded-2xl overflow-hidden shadow-lg hover:border-[#d4af37]/60 hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center animate-fadeIn">
+      <img src="/plan-elite.svg" alt="Plan Elite" class="w-16 h-16 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300" />
+      <h3 class="text-2xl font-bold text-white mb-2">Elite</h3>
+      <p class="text-[#a0a0a0] mb-4">Para profesionales</p>
+      <div class="mb-6">
+        <span class="text-4xl font-bold text-[#d4af37]">$199</span>
+        <span class="text-[#a0a0a0]">/mes</span>
       </div>
+      <button class="w-full bg-gradient-to-r from-[#d4af37] to-[#e6c950] text-[#0f0f0f] py-3 rounded-xl font-bold hover:shadow-lg hover:shadow-[#d4af37]/30 transition-all mb-8">Elegir Plan</button>
+      <ul class="space-y-3 text-[#a0a0a0] text-sm">
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Clases privadas ilimitadas</li>
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Mentoría uno-a-uno</li>
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Acceso a talleres exclusivos</li>
+        <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Grabaciones de sesiones</li>
+      </ul>
     </div>
   </div>
 
   <!-- All Plans Include -->
-  <div class="bg-[#1a1a1a] border border-[#d4af37]/20 rounded-xl p-8 text-center">
+  <div class="bg-[#181818] border border-[#d4af37]/20 rounded-2xl p-8 text-center mt-10 animate-fadeIn">
     <h4 class="text-xl font-bold text-white mb-6">Todos los planes incluyen</h4>
     <div class="grid md:grid-cols-4 gap-6 text-sm text-[#a0a0a0]">
       <div class="flex flex-col items-center gap-2">
-        <span class="text-2xl">🎯</span>
+        <img src="/plan-eval.svg" alt="Evaluación inicial" class="w-10 h-10" />
         <span>Evaluación inicial</span>
       </div>
       <div class="flex flex-col items-center gap-2">
-        <span class="text-2xl">📚</span>
+        <img src="/plan-material.svg" alt="Material didáctico" class="w-10 h-10" />
         <span>Material didáctico</span>
       </div>
       <div class="flex flex-col items-center gap-2">
-        <span class="text-2xl">💬</span>
+        <img src="/plan-support.svg" alt="Soporte 24/7" class="w-10 h-10" />
         <span>Soporte 24/7</span>
       </div>
       <div class="flex flex-col items-center gap-2">
-        <span class="text-2xl">🏆</span>
+        <img src="/plan-certificate.svg" alt="Certificado" class="w-10 h-10" />
         <span>Certificado</span>
       </div>
     </div>
@@ -137,6 +86,14 @@
 
 <style>
   section {
-    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #0f0f0f 0%, #181818 100%);
+    padding-bottom: 4rem;
+  }
+  .animate-fadeIn {
+    animation: fadeIn 1s ease;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 </style>

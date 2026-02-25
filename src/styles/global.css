@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;600;700&display=swap');
+
+html {
+	font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+	background: #0f0f0f;
+	color: #f0f0f0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: 'Inter', 'Montserrat', Arial, sans-serif;
+	background: #0f0f0f;
+	color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	cursor: default;
+}
+
+button, input, textarea, select {
+	font-family: inherit;
+	cursor: pointer;
+}
+
+*:focus {
+	outline-color: #d4af37;
+}

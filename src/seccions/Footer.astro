@@ -1,57 +1,60 @@
-<footer class="bg-[#0a0a0a] border-t border-[#d4af37]/20 py-12">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="grid md:grid-cols-4 gap-8 mb-8">
+<footer class="bg-[#0a0a0a] border-t border-[#d4af37]/20 pt-16 pb-8 animate-fadeIn">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-12 mb-12">
       <!-- Brand -->
-      <div class="space-y-4">
-        <div class="flex items-center gap-2">
-          <div class="text-2xl text-[#d4af37]">♪</div>
-          <span class="text-lg font-bold text-white">Guitar Academy</span>
-        </div>
+      <div class="space-y-4 flex flex-col items-start">
+        <img src="/logo.svg" alt="Guitar Academy Logo" class="w-14 h-14 mb-2 drop-shadow-xl" />
+        <span class="text-xl font-bold text-white">Guitar Academy</span>
         <p class="text-[#a0a0a0] text-sm">Transformando vidas a través de la música desde 2005.</p>
       </div>
-
       <!-- Quick Links -->
       <div>
         <h4 class="text-white font-semibold mb-4">Navegación</h4>
         <ul class="space-y-2 text-sm text-[#a0a0a0]">
           <li><a href="#inicio" class="hover:text-[#d4af37] transition-colors">Inicio</a></li>
           <li><a href="#servicios" class="hover:text-[#d4af37] transition-colors">Servicios</a></li>
-          <li><a href="#clases" class="hover:text-[#d4af37] transition-colors">Clases</a></li>
+          <li><a href="#clases" class="hover:text-[#d4af37] transition-colors">Planes</a></li>
           <li><a href="#testimonios" class="hover:text-[#d4af37] transition-colors">Testimonios</a></li>
         </ul>
       </div>
-
       <!-- Services -->
       <div>
         <h4 class="text-white font-semibold mb-4">Servicios</h4>
         <ul class="space-y-2 text-sm text-[#a0a0a0]">
           <li><a href="#clases" class="hover:text-[#d4af37] transition-colors">Clases Privadas</a></li>
           <li><a href="#clases" class="hover:text-[#d4af37] transition-colors">Clases Grupales</a></li>
-          <li><a href="#clases" class="hover:text-[#d4af37] transition-colors">Historia de la Música</a></li>
-          <li><a href="#clases" class="hover:text-[#d4af37] transition-colors">Composición</a></li>
+          <li><a href="#clases" class="hover:text-[#d4af37] transition-colors">Talleres Especiales</a></li>
+          <li><a href="#clases" class="hover:text-[#d4af37] transition-colors">Seguimiento Personalizado</a></li>
         </ul>
       </div>
-
       <!-- Contact -->
       <div>
         <h4 class="text-white font-semibold mb-4">Contacto</h4>
         <ul class="space-y-2 text-sm text-[#a0a0a0]">
-          <li>📧 info@guitaracademy.com</li>
-          <li>📱 +34 900 123 456</li>
-          <li>📍 Calle Principal, 123</li>
-          <li>Madrid, España</li>
+          <li class="flex items-center gap-2"><img src="/contact-email.svg" alt="Email" class="w-5 h-5" /> info@guitaracademy.com</li>
+          <li class="flex items-center gap-2"><img src="/contact-phone.svg" alt="Teléfono" class="w-5 h-5" /> +34 900 123 456</li>
+          <li class="flex items-center gap-2"><img src="/contact-location.svg" alt="Ubicación" class="w-5 h-5" /> Calle Principal, 123</li>
+          <li class="flex items-center gap-2"><img src="/contact-location.svg" alt="Ubicación" class="w-5 h-5" /> Madrid, España</li>
         </ul>
       </div>
     </div>
-
     <!-- Bottom bar -->
     <div class="border-t border-[#d4af37]/20 pt-8 flex flex-col md:flex-row items-center justify-between">
       <p class="text-[#a0a0a0] text-sm">© 2026 Guitar Academy. Todos los derechos reservados.</p>
-      <div class="flex gap-6 mt-4 md:mt-0 text-[#d4af37]">
-        <a href="#" class="hover:text-[#aa8c2c] transition-colors">Facebook</a>
-        <a href="#" class="hover:text-[#aa8c2c] transition-colors">Instagram</a>
-        <a href="#" class="hover:text-[#aa8c2c] transition-colors">YouTube</a>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-[#d4af37] transition-colors" aria-label="Facebook"><img src="/icon-facebook.svg" alt="Facebook" class="w-6 h-6" /></a>
+        <a href="#" class="hover:text-[#d4af37] transition-colors" aria-label="Instagram"><img src="/icon-instagram.svg" alt="Instagram" class="w-6 h-6" /></a>
+        <a href="#" class="hover:text-[#d4af37] transition-colors" aria-label="YouTube"><img src="/icon-youtube.svg" alt="YouTube" class="w-6 h-6" /></a>
       </div>
     </div>
   </div>
 </footer>
+<style>
+  .animate-fadeIn {
+    animation: fadeIn 1s ease;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
