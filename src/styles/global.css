@@ -61,4 +61,3 @@ a:focus, button:focus {
 .animate-spin-slow {
 	animation: spin-slow 12s linear infinite;
 }
-}
