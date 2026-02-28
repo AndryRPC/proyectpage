@@ -1,63 +1,81 @@
 @import "tailwindcss";
 
+/* Familias tipográficas primarias */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;600;700&display=swap');
 
+:root {
+  --primary: #d4af37;
+  --primary-600: #c7a233;
+  --primary-700: #aa8c2c;
+  --bg: #0f0f0f;
+  --text: #f0f0f0;
+  --muted: #a0a0a0;
+}
+
 html {
-	font-family: 'Montserrat', 'Inter', Arial, sans-serif;
-	background: #0f0f0f;
-	color: #f0f0f0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-	font-family: 'Inter', 'Montserrat', Arial, sans-serif;
-	background: #0f0f0f;
-	color: #f0f0f0;
-	margin: 0;
-	padding: 0;
-	cursor: default;
+  font-family: 'Inter', 'Montserrat', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  cursor: default;
 }
 
 button, input, textarea, select {
-	font-family: inherit;
-	cursor: pointer;
-	transition: box-shadow 0.2s, transform 0.2s;
+  font-family: inherit;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s, filter 0.2s;
 }
 
 button:hover, a:hover {
-	filter: brightness(1.1);
-	transform: translateY(-2px) scale(1.03);
-	box-shadow: 0 4px 16px rgba(212, 175, 55, 0.12);
+  filter: brightness(1.05);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.14);
 }
 
 button:active, a:active {
-	filter: brightness(0.98);
-	transform: scale(0.97);
+  filter: brightness(0.98);
+  transform: translateY(0) scale(0.98);
 }
 
-a:focus, button:focus {
-	outline: 2px solid #d4af37;
-	outline-offset: 2px;
-	box-shadow: 0 0 0 3px #d4af37aa;
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.35);
 }
 
-*:focus {
-		outline-color: #d4af37;
-}
-
+/* Animaciones globales */
 @keyframes float {
-	0% { transform: translateY(0); }
-	50% { transform: translateY(-10px); }
-	100% { transform: translateY(0); }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
-.animate-float {
-	animation: float 2.5s ease-in-out infinite;
+.animate-float { animation: float 2.8s ease-in-out infinite; }
+
+@keyframes spin-slow { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.animate-spin-slow { animation: spin-slow 12s linear infinite; }
+
+/* Sombra y superficies */
+.card {
+  background: #181818;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
-@keyframes spin-slow {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
-}
-.animate-spin-slow {
-	animation: spin-slow 12s linear infinite;
+
+/* Contenedor ancho máximo */
+.container-pro {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

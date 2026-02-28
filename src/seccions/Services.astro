@@ -1,74 +1,78 @@
-<section id="servicios" class="w-full bg-transparent">
-  <div class="w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-16">
-  <div class="text-center mb-20">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight animate-fadeIn">Nuestros Servicios</h2>
-    <p class="text-lg text-[#a0a0a0] max-w-2xl mx-auto animate-fadeIn">Ofrecemos una amplia gama de servicios diseñados para ayudarte a alcanzar tus objetivos musicales.</p>
-  </div>
+<section id="servicios" aria-labelledby="servicios-title" class="w-full bg-transparent">
+  <div class="container-pro px-4 sm:px-6 xl:px-16">
+    <div class="text-center mb-14 md:mb-20">
+      <h2 id="servicios-title" class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight animate-fadeIn">Nuestros Servicios</h2>
+      <p class="text-base md:text-lg text-[#a0a0a0] max-w-2xl mx-auto animate-fadeIn">Soluciones diseñadas para tu progreso musical: clases personalizadas, comunidad activa y seguimiento profesional.</p>
+    </div>
 
-  <div class="grid md:grid-cols-3 gap-20 justify-center">
-    <!-- Service 1 -->
-    <div class="group bg-[#181818] border border-[#d4af37]/20 rounded-2xl p-8 shadow-lg hover:border-[#d4af37]/60 hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center animate-fadeIn">
-      <img src="/guitar-icon.svg" alt="Clases Privadas" class="w-20 h-20 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300 animate-float mx-auto" />
-      <h3 class="text-2xl font-bold text-white mb-3">Clases Privadas</h3>
-      <p class="text-[#a0a0a0] mb-4">Lecciones personalizadas moldeadas según tu nivel y objetivos. Nuestros instructores se dedican completamente a tu progreso.</p>
-      <ul class="text-[#a0a0a0] text-sm space-y-2">
-        <li><span class="text-[#d4af37] font-bold">✓</span> 30, 45, o 60 minutos</li>
-        <li><span class="text-[#d4af37] font-bold">✓</span> Todos los niveles</li>
-        <li><span class="text-[#d4af37] font-bold">✓</span> Horarios flexibles</li>
-      </ul>
-    </div>
-    <!-- Service 2 -->
-    <div class="group bg-[#181818] border border-[#d4af37]/20 rounded-2xl p-8 shadow-lg hover:border-[#d4af37]/60 hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center animate-fadeIn">
-      <img src="/guitar-icon.svg" alt="Clases Grupales" class="w-20 h-20 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300 animate-float mx-auto" />
-      <h3 class="text-2xl font-bold text-white mb-3">Clases Grupales</h3>
-      <p class="text-[#a0a0a0] mb-4">Aprende en grupo y comparte la experiencia con otros músicos. Ideal para principiantes que desean construir comunidad.</p>
-      <ul class="text-[#a0a0a0] text-sm space-y-2">
-        <li><span class="text-[#d4af37] font-bold">✓</span> 4-6 estudiantes</li>
-        <li><span class="text-[#d4af37] font-bold">✓</span> Sesiones semanales</li>
-        <li><span class="text-[#d4af37] font-bold">✓</span> Precio económico</li>
-      </ul>
-    </div>
-    <!-- Service 3 -->
-    <div class="group bg-[#181818] border border-[#d4af37]/20 rounded-2xl p-8 shadow-lg hover:border-[#d4af37]/60 hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center animate-fadeIn">
-      <img src="/guitar-icon.svg" alt="Talleres Especiales" class="w-20 h-20 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300 animate-float mx-auto" />
-      <h3 class="text-2xl font-bold text-white mb-3">Talleres Especiales</h3>
-      <p class="text-[#a0a0a0] mb-4">Talleres intensivos sobre técnicas avanzadas, composición y teoría musical. Dictados por profesionales renombrados.</p>
-      <ul class="text-[#a0a0a0] text-sm space-y-2">
-        <li><span class="text-[#d4af37] font-bold">✓</span> Sesiones mensuales</li>
-        <li><span class="text-[#d4af37] font-bold">✓</span> Temas variados</li>
-        <li><span class="text-[#d4af37] font-bold">✓</span> Certificados</li>
-      </ul>
-    </div>
-  </div>
+    <!-- Grid principal de servicios -->
+    <div class="grid md:grid-cols-3 gap-8 md:gap-10 xl:gap-12 justify-center">
+      <!-- Servicio 1 -->
+      <article class="group relative bg-[#181818]/90 border border-[#d4af37]/20 rounded-2xl p-8 shadow-lg hover:border-[#d4af37]/50 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] animate-fadeIn">
+        <header class="flex flex-col items-center text-center">
+          <img src="/guitar-icon.svg" alt="Icono de guitarra - Clases Privadas" class="w-16 h-16 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300" loading="lazy" width="64" height="64" />
+          <h3 class="text-2xl font-bold text-white mb-2">Clases Privadas</h3>
+          <p class="text-[#a0a0a0] mb-5">Lecciones 1 a 1 personalizadas para tus objetivos. Progreso garantizado con feedback continuo.</p>
+        </header>
+        <ul class="text-[#cfcfcf] text-sm space-y-2">
+          <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Duraciones de 30, 45 o 60 minutos</li>
+          <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Flexible: elige tus horarios</li>
+          <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Todos los niveles y estilos</li>
+        </ul>
+      </article>
 
-  <!-- Additional Services -->
-  <div class="grid md:grid-cols-2 gap-16 mt-12">
-    <!-- Service 4 -->
-    <div class="group bg-[#181818] border border-[#d4af37]/20 rounded-2xl p-8 shadow-lg hover:border-[#d4af37]/60 hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center animate-fadeIn">
-      <img src="/guitar-icon.svg" alt="Clases Online" class="w-20 h-20 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300 animate-float mx-auto" />
-      <h3 class="text-xl font-bold text-white mb-2">Clases Online</h3>
-      <p class="text-[#a0a0a0]">Acceso a nuestras clases desde cualquier lugar. Videoconferencias en vivo y acceso a contenido grabado.</p>
+      <!-- Servicio 2 -->
+      <article class="group relative bg-[#181818]/90 border border-[#d4af37]/20 rounded-2xl p-8 shadow-lg hover:border-[#d4af37]/50 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] animate-fadeIn">
+        <header class="flex flex-col items-center text-center">
+          <img src="/guitar-icon.svg" alt="Icono de guitarra - Clases Grupales" class="w-16 h-16 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300" loading="lazy" width="64" height="64" />
+          <h3 class="text-2xl font-bold text-white mb-2">Clases Grupales</h3>
+          <p class="text-[#a0a0a0] mb-5">Aprende en comunidad y potencia tu motivación. Sesiones dinámicas y colaborativas.</p>
+        </header>
+        <ul class="text-[#cfcfcf] text-sm space-y-2">
+          <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Grupos reducidos (4-6 estudiantes)</li>
+          <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Sesiones semanales</li>
+          <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Precio accesible</li>
+        </ul>
+      </article>
+
+      <!-- Servicio 3 -->
+      <article class="group relative bg-[#181818]/90 border border-[#d4af37]/20 rounded-2xl p-8 shadow-lg hover:border-[#d4af37]/50 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] animate-fadeIn">
+        <header class="flex flex-col items-center text-center">
+          <img src="/guitar-icon.svg" alt="Icono de guitarra - Talleres Especiales" class="w-16 h-16 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300" loading="lazy" width="64" height="64" />
+          <h3 class="text-2xl font-bold text-white mb-2">Talleres Especiales</h3>
+          <p class="text-[#a0a0a0] mb-5">Intensivos sobre técnicas avanzadas, composición y teoría musical con profesionales invitados.</p>
+        </header>
+        <ul class="text-[#cfcfcf] text-sm space-y-2">
+          <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Sesiones mensuales</li>
+          <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Temáticas específicas</li>
+          <li class="flex items-center gap-2"><span class="text-[#d4af37] font-bold">✓</span> Certificado de participación</li>
+        </ul>
+      </article>
     </div>
-    <!-- Service 5 -->
-    <div class="group bg-[#181818] border border-[#d4af37]/20 rounded-2xl p-8 shadow-lg hover:border-[#d4af37]/60 hover:shadow-2xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center animate-fadeIn">
-      <img src="/guitar-icon.svg" alt="Seguimiento Personalizado" class="w-20 h-20 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300 animate-float mx-auto" />
-      <h3 class="text-xl font-bold text-white mb-2">Seguimiento Personalizado</h3>
-      <p class="text-[#a0a0a0]">Análisis detallado de tu progreso con recomendaciones personalizadas para tu desarrollo musical.</p>
+
+    <!-- Servicios adicionales -->
+    <div class="grid md:grid-cols-2 gap-8 md:gap-10 xl:gap-12 mt-10 md:mt-12">
+      <article class="group bg-[#181818]/90 border border-[#d4af37]/20 rounded-2xl p-8 shadow-lg hover:border-[#d4af37]/50 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] animate-fadeIn">
+        <header class="flex flex-col items-center text-center">
+          <img src="/guitar-icon.svg" alt="Icono de guitarra - Clases Online" class="w-16 h-16 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300" loading="lazy" width="64" height="64" />
+        <h3 class="text-xl font-bold text-white mb-2">Clases Online</h3>
+          <p class="text-[#a0a0a0]">Aprende desde cualquier lugar con videoconferencias en vivo y acceso a material grabado.</p>
+        </header>
+      </article>
+
+      <article class="group bg-[#181818]/90 border border-[#d4af37]/20 rounded-2xl p-8 shadow-lg hover:border-[#d4af37]/50 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] animate-fadeIn">
+        <header class="flex flex-col items-center text-center">
+          <img src="/guitar-icon.svg" alt="Icono de guitarra - Seguimiento Personalizado" class="w-16 h-16 mb-4 drop-shadow-xl group-hover:scale-110 transition-transform duration-300" loading="lazy" width="64" height="64" />
+          <h3 class="text-xl font-bold text-white mb-2">Seguimiento Personalizado</h3>
+          <p class="text-[#a0a0a0]">Análisis de tu progreso con reportes y recomendaciones hechas a medida.</p>
+        </header>
+      </article>
     </div>
-  </div>
   </div>
 </section>
 
 <style>
-  section {
-    background: linear-gradient(135deg, #0f0f0f 0%, #181818 100%);
-    padding-bottom: 4rem;
-  }
-  .animate-fadeIn {
-    animation: fadeIn 1s ease;
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+  section { background: linear-gradient(135deg, #0f0f0f 0%, #181818 100%); padding-bottom: 4rem; }
+  .animate-fadeIn { animation: fadeIn 0.9s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 </style>

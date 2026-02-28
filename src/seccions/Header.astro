@@ -1,52 +1,54 @@
-<header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#0f0f0f] to-[#0f0f0f]/80 backdrop-blur-lg border-b border-[#d4af37]/20">
-  <nav class="max-w-7xl mx-auto px-8 lg:px-16 py-6 flex items-center justify-between">
-    <!-- Logo -->
-    <a href="#inicio" class="group flex items-center gap-2 hover:opacity-90 transition-opacity duration-300">
-      <img src="/logo.svg" alt="Guitar Academy" class="h-14 w-auto filter drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300">
+<header role="banner" class="fixed top-0 inset-x-0 z-50 border-b border-[#d4af37]/15 bg-gradient-to-b from-[#0f0f0f] to-[#0f0f0f]/80 backdrop-blur-xl">
+  <nav role="navigation" aria-label="Navegación principal" class="container-pro px-4 py-4 md:py-5 flex items-center justify-between">
+    <!-- Marca -->
+    <a href="#inicio" class="group flex items-center gap-3 interactive" aria-label="Ir al inicio">
+      <img src="/logo.svg" alt="Guitar Academy" class="h-12 w-auto drop-shadow-xl group-hover:drop-shadow-2xl transition-all duration-300" />
+      <span class="hidden sm:inline text-base font-semibold tracking-wide text-white/90 group-hover:text-white">Guitar Academy</span>
     </a>
 
-    <!--  linkx de nzvegación -->
-    <nav class="hidden lg:flex items-center gap-6 justify-center">
-      <a href="#inicio" class="relative px-4 py-2 mx-1 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
+    <!-- Navegación desktop -->
+    <ul class="hidden lg:flex items-center gap-2" role="menubar">
+      <li role="none">
+        <a role="menuitem" href="#inicio" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group focus:outline-none">
+          <span class="relative z-10 group-hover:text-[#d4af37]">Inicio</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+        </a>
+      </li>
+      <li role="none">
+        <a role="menuitem" href="#servicios" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group">
+          <span class="relative z-10 group-hover:text-[#d4af37]">Servicios</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+        </a>
+      </li>
+      <li role="none">
+        <a role="menuitem" href="#clases" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group">
+          <span class="relative z-10 group-hover:text-[#d4af37]">Clases</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+        </a>
+      </li>
+      <li role="none">
+        <a role="menuitem" href="#por-que-nosotros" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group">
+          <span class="relative z-10 group-hover:text-[#d4af37]">¿Por qué nosotros?</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+        </a>
+      </li>
+      <li role="none">
+        <a role="menuitem" href="#testimonios" class="relative px-4 py-2 text-sm font-medium text-[#f0f0f0] group">
+          <span class="relative z-10 group-hover:text-[#d4af37]">Testimonios</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+        </a>
+      </li>
+    </ul>
 
-        <span class="relative z-10 group-hover:text-[#d4af37]">Inicio</span>
-        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
+    <!-- Acciones y menú móvil -->
+    <div class="flex items-center gap-2">
+      <a href="#cta" class="hidden lg:inline-flex items-center gap-2 relative px-5 py-2.5 text-sm font-bold text-[#0f0f0f] rounded-xl bg-gradient-to-r from-[#d4af37] via-[#e6c950] to-[#d4af37] shadow-lg hover:shadow-2xl hover:shadow-[#d4af37]/30 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37]/60">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline-block align-middle"><path d="M2 12l2-2 8-8 8 8-2 2-6-6-6 6z" fill="#0f0f0f"/><path d="M2 12v8h20v-8" stroke="#0f0f0f" stroke-width="2"/></svg>
+        Reservar
       </a>
-      <a href="#servicios" class="relative px-4 py-2 mx-1 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
 
-        <span class="relative z-10 group-hover:text-[#d4af37]">Servicios</span>
-        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
-      </a>
-      <a href="#clases" class="relative px-4 py-2 mx-1 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
-
-        <span class="relative z-10 group-hover:text-[#d4af37]">Clases</span>
-        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
-      </a>
-      <a href="#por-que-nosotros" class="relative px-4 py-2 mx-1 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
-
-        <span class="relative z-10 group-hover:text-[#d4af37]">¿Por qué nosotros?</span>
-        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
-      </a>
-      <a href="#testimonios" class="relative px-4 py-2 mx-1 text-sm font-medium text-[#f0f0f0] group transition-colors duration-300">
-        
-        <span class="relative z-10 group-hover:text-[#d4af37]">Testimonios</span>
-        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] group-hover:w-full transition-all duration-300"></span>
-      </a>
-    </nav>
-
-    <!-- CTA Button and Mobile Toggle - Right Side -->
-    <div class="flex items-center gap-4">
-      <!-- CTA Button Mejorado -->
-      <button class="hidden lg:block relative px-8 py-3 text-base font-bold text-[#0f0f0f] rounded-xl bg-gradient-to-r from-[#d4af37] via-[#e6c950] to-[#d4af37] shadow-lg hover:shadow-2xl hover:shadow-[#d4af37]/40 transition-all duration-300 transform hover:scale-105 active:scale-95 overflow-hidden group focus:outline-none focus:ring-2 focus:ring-[#d4af37]/60">
-        <span class="absolute inset-0 pointer-events-none animate-pulse bg-gradient-to-r from-[#d4af37]/30 via-[#e6c950]/20 to-[#d4af37]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-        <span class="relative flex items-center gap-2">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline-block align-middle"><path d="M2 12l2-2 8-8 8 8-2 2-6-6-6 6z" fill="#d4af37"/><path d="M2 12v8h20v-8" stroke="#d4af37" stroke-width="2"/></svg>
-          Reservar Ahora
-        </span>
-      </button>
-
-      <!-- Mobile Menu Toggle -->
-      <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-[#d4af37]/10 transition-colors duration-300 group">
+      <!-- Toggle móvil -->
+      <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-[#d4af37]/10 transition-colors duration-300 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37]/60" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú">
         <span class="w-6 h-0.5 bg-[#d4af37] transition-all duration-300 group-hover:w-7"></span>
         <span class="w-6 h-0.5 bg-[#d4af37] transition-all duration-300"></span>
         <span class="w-6 h-0.5 bg-[#d4af37] transition-all duration-300 group-hover:w-7"></span>
@@ -54,84 +56,68 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden lg:hidden flex-col bg-[#0a0a0a] border-t border-[#d4af37]/20">
-    <nav class="flex flex-col gap-2">
-      <a href="#inicio" class="px-6 py-3 mb-1 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
-        Inicio
-      </a>
-      <a href="#servicios" class="px-6 py-3 mb-1 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
-        Servicios
-      </a>
-      <a href="#clases" class="px-6 py-3 mb-1 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
-        Clases
-      </a>
-      <a href="#por-que-nosotros" class="px-6 py-3 mb-1 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
-        ¿Por qué nosotros?
-      </a>
-      <a href="#testimonios" class="px-6 py-3 mb-1 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors duration-300">
-        Testimonios
-      </a>
-      <button class="mx-6 my-4 px-6 py-2.5 text-sm font-semibold text-[#0f0f0f] bg-gradient-to-r from-[#d4af37] to-[#e6c950] rounded-lg hover:shadow-lg hover:shadow-[#d4af37]/30 transition-all duration-300 w-full">
-        Reservar Ahora
-      </button>
+  <!-- Menú móvil -->
+  <div id="mobile-menu" class="hidden lg:hidden flex-col bg-[#0a0a0a] border-t border-[#d4af37]/20" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <nav class="container-pro py-3" aria-label="Navegación móvil">
+      <ul class="flex flex-col gap-1">
+        <li><a href="#inicio" class="block px-4 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors">Inicio</a></li>
+        <li><a href="#servicios" class="block px-4 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors">Servicios</a></li>
+        <li><a href="#clases" class="block px-4 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors">Clases</a></li>
+        <li><a href="#por-que-nosotros" class="block px-4 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors">¿Por qué nosotros?</a></li>
+        <li><a href="#testimonios" class="block px-4 py-3 text-sm font-medium text-[#f0f0f0] border-b border-[#d4af37]/10 hover:bg-[#d4af37]/5 hover:text-[#d4af37] transition-colors">Testimonios</a></li>
+        <li class="px-4 py-3">
+          <a href="#cta" class="block w-full text-center px-5 py-2.5 text-sm font-bold text-[#0f0f0f] rounded-xl bg-gradient-to-r from-[#d4af37] via-[#e6c950] to-[#d4af37] shadow-lg hover:shadow-[#d4af37]/30 transition-all">Reservar ahora</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>
 
 <style>
-  header {
-    box-shadow: 0 4px 30px rgba(212, 175, 55, 0.08);
-    animation: slideDown 0.6s ease-out;
-  }
-
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  a {
-    position: relative;
-  }
-
-  /* Smooth transitions for all elements */
-  :global(body) {
-    scroll-behavior: smooth;
-  }
+  header { box-shadow: 0 4px 30px rgba(212, 175, 55, 0.08); animation: slideDown .5s ease-out; }
+  @keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 
 <script is:inline>
-  // Mobile menu toggle functionality
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initMobileMenu);
-  } else {
-    initMobileMenu();
-  }
-
+  // Accesible mobile menu toggle
   function initMobileMenu() {
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    if (menuToggle && mobileMenu) {
-      menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        mobileMenu.classList.toggle('flex');
-      });
+    if (!menuToggle || !mobileMenu) return;
 
-      // Close menu when a link is clicked
-      const mobileLinks = mobileMenu.querySelectorAll('a');
-      mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-          mobileMenu.classList.remove('flex');
-        });
-      });
-    }
+    const closeMenu = () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('flex');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Abrir menú');
+    };
+
+    const openMenu = () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+      menuToggle.setAttribute('aria-expanded', 'true');
+      menuToggle.setAttribute('aria-label', 'Cerrar menú');
+    };
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      if (expanded) closeMenu(); else openMenu();
+    });
+
+    // Cerrar al seleccionar un link
+    const links = mobileMenu.querySelectorAll('a');
+    links.forEach(link => link.addEventListener('click', closeMenu));
+
+    // Cerrar con ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileMenu);
+  } else {
+    initMobileMenu();
   }
 </script>
